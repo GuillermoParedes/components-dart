@@ -1,0 +1,42 @@
+{
+  "app": "Components",
+  "author": "Codevs",
+  "description": "App about tech Flutter",
+  "routes": [
+    {
+      "route": "alert",
+      "icon": "add_alert",
+      "title": "Alertas"
+    },
+    {
+      "route": "avatar",
+      "icon": "accessibility",
+      "title": "Avatars"
+    },
+    {
+      "route": "card",
+      "icon": "folder_open",
+      "title": "Cards - Tarjetas"
+    },
+    {
+      "route": "animatedContainer",
+      "icon": "donut",
+      "title": "Animate Container"
+    },
+    {
+      "route": "inputs",
+      "icon": "input",
+      "title": "Input"
+    },
+    {
+      "route": "slider",
+      "icon": "tune",
+      "title": "Slider - Checkbox"
+    },
+    {
+      "route": "list",
+      "icon": "list",
+      "title": "List"
+    }
+  ]
+}
