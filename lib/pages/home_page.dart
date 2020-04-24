@@ -14,15 +14,11 @@ class HomePage extends StatelessWidget {
   }
 
   Widget _listOptions() {
-    menuProvider.loadData().then((res) {
-      print(res);
-    });
-
     return FutureBuilder(
         future: menuProvider.loadData(),
         initialData: [],
         builder: (BuildContext context, AsyncSnapshot<List<dynamic>> snapshot) {
-          print('SnapshotData:: ${snapshot.data}');
+          // print('SnapshotData:: ${snapshot.data}');
           return ListView(
             children: _generateOptions(snapshot?.data, context),
           );
@@ -31,7 +27,6 @@ class HomePage extends StatelessWidget {
 
   List<Widget> _generateOptions(List<dynamic> options, BuildContext context) {
     return options.map((option) {
-      print('The option is:: ${option}');
       return ListTile(
         title: Text(option['title']),
         leading: getIcon(option['icon']),

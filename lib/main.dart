@@ -1,4 +1,3 @@
-import 'package:components/pages/home_page.dart';
 import 'package:components/route_generator.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +9,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Material App',
-        // home: HomePage());
         initialRoute: '/',
         onGenerateRoute: RouteGenerator.generateRoute);
   }
